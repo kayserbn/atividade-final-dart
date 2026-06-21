@@ -120,7 +120,7 @@ class _AddGameSheetState extends ConsumerState<AddGameSheet> {
                     ),
                     error: (e, _) => Padding(
                       padding: const EdgeInsets.all(16),
-                      child: Text('Erro ao buscar. Verifique sua chave RAWG.',
+                      child: Text('Erro: $e',
                           style: const TextStyle(color: AppColors.error)),
                     ),
                     data: (results) => results.isEmpty
